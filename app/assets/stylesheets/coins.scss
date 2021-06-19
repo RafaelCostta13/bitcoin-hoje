@@ -1,0 +1,48 @@
+// Place all the styles related to the coins controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+		.price {
+			font-family: 'Roboto', sans-serif;
+			font-size: clamp(2.8rem, 13vw, 4rem);
+		}
+		.btn-primary {
+		}
+		.super-marge {
+			margin-top: 20rem ;
+		}
+		.text-p {
+			color: black;
+			font-size: 1.2rem;
+		}
+
+
+		footer {
+			background-color: #212529;
+		}
+		.footer-text {
+			color: #8d8d8d;
+
+		}
+		.footer-title {
+			color: white;
+		}
+		.footer-a {
+			color: #8d8d8d !important;
+		}
+		.footer-icon {
+			font-size: 1.5rem;
+			color: #8d8d8d;
+		}
+		.footer-signature {
+			font-size: clamp(0.5rem, 5vw, 0.8rem);
+			letter-spacing: 0.2rem;
+			color: #8d8d8d;
+		}
+		.footer-signature i {
+			color: green;
+		}
+		.footer-signature a {
+			color: #8d8d8d;
+		}
+
