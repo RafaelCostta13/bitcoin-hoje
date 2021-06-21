@@ -8,7 +8,7 @@ require 'json'
 	# Rota apenas a moeda especificada
 	# https://api.binance.com/api/v3/ticker/price?symbol=LTCBTC
 
-BASE_URL = "https://api.binance.com/api/v3/ticker/price"
+	BASE_URL_API_BINANCE = "https://api.binance.com/api/v3/ticker/price"
 	
 	
 	def get_coin(coin)
@@ -18,7 +18,7 @@ BASE_URL = "https://api.binance.com/api/v3/ticker/price"
 	end
 
 	def consult_api_binance(ticket_coin)
-		uri = BASE_URL + "?symbol=#{ticket_coin}"
+		uri = BASE_URL_API_BINANCE + "?symbol=#{ticket_coin}"
 		uri = URI(uri)
 		consult_binance = Net::HTTP.get(uri)	
 		price = set_price_coin(consult_binance)

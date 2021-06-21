@@ -5,10 +5,7 @@ class CoinsController < ApplicationController
 		coin = Coin.new
 		@data = coin.get_coin(params[:ticket_coin])
 
-		redirect_to '/notfound' if @data.blank?
+		redirect_to '/' if @data.blank?
 	end
 
-	def notfound
-		
-	end
 end

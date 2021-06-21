@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
-    <title>BitcoinHoje | <%= @data.name %></title>
+    <title>BitcoinNow | <%= @data.name %> | Cotação de criptomoedas. Valor e Preço</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -23,17 +23,33 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <!-- End CDN Font Awesome -->
 
-    <!-- -->
-
-    <!-- -->
+    <!-- Meta Tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="description" content="Bitcoin Now. Valor e Preço de criptomoedas em tempo real. Preço do Bitcoin Agora.">
+    <meta name="keywords", content="Bitcoin Now. bitcoin hoje. cotação bitcoin. preço do bitcoin hoje. Preço de criptomoedas. Valor dogecoin hoje.">
+    
+    <!-- Meta tags OG -->
+    <meta name="og:type" content="website">
+    <meta name="og:site_name" content="Bitcoin Now">
+    <meta name="og:title" content="Bitcoin Now | Hoje | Agora">
+    <meta name="og:url" content="https://www.bitcoinnow.com.br">
+    <meta name="og:image" content="<%= @data.path_img %>">
+    <meta name="og:description" content="Bitcoin Now. Valor e Preço de criptomoedas em tempo real. Preço do Bitcoin Agora.">
   </head>
+  
+  <!-- Meta Canonical -->
+  <link name="canonical" href="https://www.bitcoinnow.com.br">
+
+  <!-- Meta tag http-equiv -->
+  <meta http-equiv="Content-Type" content="text/html">
+
 
   <body>
 
     <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid d-flex justify-content-center">
-          <a class="navbar-brand" href="#">Bitcoin hoje</a>
+          <a class="navbar-brand" href="#">Bitcoin Now</a>
         </div>
       </nav>
     </div>
